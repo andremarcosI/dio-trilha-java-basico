@@ -25,10 +25,10 @@ public class ContaTerminal extends ContaOperacoes {
         System.out.println("Por fim informe o numero da conta:");
         numero = scanner.nextInt();
         //Apresenta ao usuário os dados cadastrados,e o status disponível da conta.
-        System.out.println("======================");
+        System.out.println("========================");
         System.out.println();
         System.out.printf("Olá [%s], obrigado por criar uma conta em nosso banco!",nomeCliente);
-        System.out.printf("Sua agência é:%s, e seu saldo %s, ",agencia,saldo);
+        System.out.printf("Sua agência é:[%s], e seu saldo [%s], \n",agencia,saldo);
         System.out.printf("Já está disponivel para saque!");
         System.out.println();
         System.out.println("=========================");
@@ -48,14 +48,14 @@ public class ContaTerminal extends ContaOperacoes {
             System.out.println("Informe o valor do saque:");
             valor = scanner.nextInt(); 
             saldo -=valor;
-            System.out.printf("Saque realizado com sucesso!Saldo atual:%s.2f",saldo);    
+            System.out.printf("Saque realizado com sucesso!Saldo atual:%.2f",saldo);    
         }else if(Op == 2){
         System.out.println("Informe o valor do deposito:");
             valor = scanner.nextInt(); 
             saldo +=valor;   
-            System.out.printf("Deposito realizado com sucesso!Saldo atual: %s.2f",saldo);     
+            System.out.printf("Deposito realizado com sucesso!Saldo atual: %.2f",saldo);     
         }else if(Op==3){
-            System.out.printf("O saldo atual da conta %s",numero);   
+            System.out.printf("O saldo atual  %.2f",saldo);   
         }else{
             System.out.println("Opção não está disponível...");
         }
