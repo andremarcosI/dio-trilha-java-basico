@@ -36,6 +36,7 @@ public class ContaTerminal extends ContaOperacoes {
 
            //Fornece as operações disponíveis para o Usuário 
 
+       
         System.out.println("==========================");
         System.out.println("Informe a Operação que deseja realizar");
         System.out.println("Digite (1) => Sacar");
@@ -43,7 +44,9 @@ public class ContaTerminal extends ContaOperacoes {
         System.out.println("Digite (3) => Consultar Saldo");
         System.out.println("==========================");
        
+
         Op = scanner.nextInt();
+
         if(Op==1){
             System.out.println("Informe o valor do saque:");
             valor = scanner.nextInt(); 
